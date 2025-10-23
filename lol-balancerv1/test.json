@@ -1,0 +1,77 @@
+{
+  "players": [
+    {
+      "id": "p1",
+      "name": "Alice",
+      "roles": { "top": 60, "jungle": 40, "mid": 75, "adc": 50, "support": 30 },
+      "prefs": ["mid", "adc"],
+      "assignedRole": null
+    },
+    {
+      "id": "p2",
+      "name": "Bob",
+      "roles": { "top": 55, "jungle": 65, "mid": 45, "adc": 70, "support": 35 },
+      "prefs": ["adc", "jungle"],
+      "assignedRole": null
+    },
+    {
+      "id": "p3",
+      "name": "Charlie",
+      "roles": { "top": 80, "jungle": 55, "mid": 50, "adc": 30, "support": 25 },
+      "prefs": ["top", "jungle"],
+      "assignedRole": null
+    },
+    {
+      "id": "p4",
+      "name": "Diana",
+      "roles": { "top": 40, "jungle": 70, "mid": 60, "adc": 55, "support": 45 },
+      "prefs": ["jungle", "mid"],
+      "assignedRole": null
+    },
+    {
+      "id": "p5",
+      "name": "Ethan",
+      "roles": { "top": 65, "jungle": 60, "mid": 40, "adc": 50, "support": 70 },
+      "prefs": ["support", "top"],
+      "assignedRole": null
+    },
+    {
+      "id": "p6",
+      "name": "Fiona",
+      "roles": { "top": 45, "jungle": 30, "mid": 80, "adc": 65, "support": 55 },
+      "prefs": ["mid", "adc"],
+      "assignedRole": null
+    },
+    {
+      "id": "p7",
+      "name": "George",
+      "roles": { "top": 70, "jungle": 50, "mid": 35, "adc": 75, "support": 40 },
+      "prefs": ["adc", "top"],
+      "assignedRole": null
+    },
+    {
+      "id": "p8",
+      "name": "Hannah",
+      "roles": { "top": 50, "jungle": 75, "mid": 55, "adc": 45, "support": 65 },
+      "prefs": ["jungle", "support"],
+      "assignedRole": null
+    },
+    {
+      "id": "p9",
+      "name": "Ian",
+      "roles": { "top": 35, "jungle": 40, "mid": 65, "adc": 55, "support": 75 },
+      "prefs": ["support", "mid"],
+      "assignedRole": null
+    },
+    {
+      "id": "p10",
+      "name": "Julia",
+      "roles": { "top": 75, "jungle": 60, "mid": 45, "adc": 40, "support": 55 },
+      "prefs": ["top", "support"],
+      "assignedRole": null
+    }
+  ],
+  "MAX_PLAYERS": 10,
+  "ROLES": ["top", "jungle", "mid", "adc", "support"],
+  "ts": "2025-09-16T12:00:00Z"
+}

@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>LoL Custom Balancer — V1 (Beau)</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="hero">
+<div class="hero-cta">
+  <button id="themeToggle" class="btn ghost">🌙</button>
+</div>
+      
+      <div class="hero-inner">
+        <div class="logo">
+          
+        </div>
+        <img src="https://logos-world.net/wp-content/uploads/2023/02/LoL-Symbol.png" alt="Logo du site" class="site-logo">
+        <div class="hero-text">
+          
+          <h1>LoL Custom Balancer</h1>
+          <p class="muted">V1 - Local & privé - Saisis les notes, choisis les préférences, génère 5v5 équilibrées.</p>
+        </div>
+        <div class="hero-cta">
+          <button id="btnHelp" class="btn ghost">Aide rapide</button>
+        </div>
+      </div>
+      <div class="wave"></div>
+    </header>
+
+    <main class="container">
+      <section class="panel">
+        <h2>Ajouter / modifier un joueur</h2>
+        <form id="playerForm" class="form-grid" autocomplete="off">
+          <input id="inpPseudo" placeholder="Pseudo" required />
+          <div class="inputs-roles">
+            <label>Top <input id="sTop" type="number" min="0" max="100" value="50" /></label>
+            <label>Jungle <input id="sJungle" type="number" min="0" max="100" value="50" /></label>
+            <label>Mid <input id="sMid" type="number" min="0" max="100" value="50" /></label>
+            <label>ADC <input id="sAdc" type="number" min="0" max="100" value="50" /></label>
+            <label>Support <input id="sSup" type="number" min="0" max="100" value="50" /></label>
+          </div>
+
+          <div class="prefs">
+            <label>Préférence 1
+              <select id="pref1">
+                <option value="">-</option><option value="top">Top</option><option value="jungle">Jungle</option><option value="mid">Mid</option><option value="adc">ADC</option><option value="support">Support</option>
+              </select>
+            </label>
+            <label>Préférence 2
+              <select id="pref2">
+                <option value="">-</option><option value="top">Top</option><option value="jungle">Jungle</option><option value="mid">Mid</option><option value="adc">ADC</option><option value="support">Support</option>
+              </select>
+            </label>
+            <label>Avatar URL <input id="avatarUrl" placeholder="https://..." /></label>
+            <div class="form-actions">
+              <button type="submit" class="btn">Ajouter</button>
+              <button id="btnClearInput" type="button" class="btn ghost">Réinitialiser</button>
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <section class="panel">
+        <h2>Joueurs <small class="muted">(<span id="currentCount">0</span>/<span id="maxPlayersSpan">10</span>)</small></h2>
+        <div class="controls">
+            <button class="btn btn-generate" id="btnGenerate">Générer équipes</button>
+
+          <button id="btnAssign" class="btn">Assigner rôles</button>
+          <button id="btnExport" class="btn ghost">Exporter JSON</button>
+          <button id="btnImport" class="btn ghost">Importer JSON</button>
+          <button id="btnReset" class="btn danger">Tout effacer</button>
+          <input id="fileImport" type="file" accept="application/json" style="display:none" />
+        </div>
+
+        <div id="playersContainer" class="players-grid" aria-live="polite"></div>
+
+      </section>
+
+      <section class="panel result-panel">
+        <h2>Résultat</h2>
+        <div id="resultArea" class="result-area">
+          <div class="empty">Aucune équipe générée — ajoute <strong>10</strong> joueurs et clique sur <em>Générer équipes</em>.</div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>V1 • <span class="muted">local & privé</span></div>
+      <div class="credits muted">Tu peux remplacer les images de rôle dans la section résultat par tes propres images.</div>
+    </footer>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
